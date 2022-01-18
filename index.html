@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Práctica 7.3 - Subir imagen</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2 class="enunciado">Práctica 7.3</h2>
+      <div class="separador"></div>
+      <p class="enunciado__texto">
+        Construye un formulario que permita introducir el nombre de usuario, y
+        subir una fotografía. Cuándo pulsemos sobre el botón enviar, se nos
+        mostrará la imagen enviada con un tamaño de 600px, el logo del instituto
+        situado en la parte superior derecha, y el nombre del usuario en la
+        parte central de la imagen.
+      </p>
+      <div class="separador"></div>
+      <form
+        action="subir-imagen.php"
+        enctype="multipart/form-data"
+        method="post"
+      >
+        <label>Nombre usuario: </label>
+        <input type="text" name="usuario" />
+        <div class="separador"></div>
+        <label>Selecciona una imagen: </label>
+        <input type="file" name="imagen" />
+        <div class="separador"></div>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
+
